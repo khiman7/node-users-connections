@@ -1,0 +1,21 @@
+{
+  "name": "mobidev-test-task",
+  "version": "1.0.0",
+  "description": "Test task for MobiDev (Intern Node.js position)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node db/seedUsers.js"
+  },
+  "author": "Kyrylo Khiman",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
