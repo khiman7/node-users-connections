@@ -1,7 +1,7 @@
 {
   "name": "mobidev-test-task",
   "version": "1.0.0",
-  "description": "Test task for MobiDev (Intern Node.js position)",
+  "description": "Node.js test task",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

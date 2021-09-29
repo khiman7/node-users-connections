@@ -9,7 +9,7 @@ const User = require('../models/User');
 
 const getRandomUserId = () => {
   return Math.ceil(Math.random() * USERS_NUMBER);
-}
+};
 
 const generateRandomUser = async () => {
   const data = await axios.get('https://randomuser.me/api/')

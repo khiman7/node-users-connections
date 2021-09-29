@@ -30,8 +30,6 @@ class UserService {
       followers.includes(followedId)
     ).length;
 
-    console.log(friendsCount);
-
     return {
       userId, friendsCount
     };
@@ -45,8 +43,6 @@ class UserService {
           secondUser.followers.length - firstUser.followers.length
       )
       .slice(0, 3);
-    
-    console.log(popularUsers);
 
     return popularUsers;
   }
