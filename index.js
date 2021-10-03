@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const router = require('./routes/router.js');
-const { HOST, PORT, DB_URL } = require('./config/default.json');
+const { PORT, DB_URL } = require('./config/default.json');
 
 const app = express();
 
@@ -16,7 +16,7 @@ const startServer = async () => {
     });
 
     app.listen(PORT, () => {
-      console.log(`Server is running on ${HOST}:${PORT}`);
+      console.log(`Server is running at http://localhost:${PORT}`);
     });
   } catch (err) {
     console.log(err);
