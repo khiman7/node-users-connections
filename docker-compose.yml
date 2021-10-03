@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    container_name: node-users-connections
+    restart: always
+    build: .
+    command: bash -c "npm run seed && npm start"
+    ports:
+      - '80:5000'
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo:3.6.23
+    ports:
+      - '27017:27017'
