@@ -18,7 +18,7 @@ Install the dependencies in the local node_modules folder.
     npm start
 
 ## Data Seeding script
-Generates the number of users and connections between them specified in the config file.
+Generates the number of users and connections between them specified in config/default.json
 
     npm run seed
 
