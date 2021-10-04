@@ -33,7 +33,10 @@ const generateRandomUser = async () => {
 
 const seedUsers = async () => {
   try {
-    await mongoose.connect(DB_URL, { useNewUrlParser: true, useUnifiedTopology: true });
+    await mongoose.connect(DB_URL, { 
+      useNewUrlParser: true, 
+      useUnifiedTopology: true, 
+    });
     console.log(`Connected to database on: ${DB_URL}`);
     console.log('Deleting old "users" collection...');
     await mongoose.connection.dropCollection('users');
