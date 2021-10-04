@@ -12,8 +12,14 @@ You will need a Node.js and MongoDB installed.
 Install the dependencies in the local node_modules folder.
 
     npm install
+    
+### Generate users
+Generate users using data seeding script
 
     npm run seed
+
+### Start the app
+Start the application
 
     npm start
 
