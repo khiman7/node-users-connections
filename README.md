@@ -1,18 +1,22 @@
 # Node.js User connections REST API
 Node.js Backend application with followers/following relation model
 
-## Install
+## Run the app using Docker
+
+    docker-compose up --build
+
+## Run the app
+You will need a Node.js and MongoDB installed.
+
+### Install dependecies
 Install the dependencies in the local node_modules folder.
 
     npm install
 
-## Run the app using Docker
-
-    docker-compose up --build
-## Run the app
-Starts the server on the port specified in the config file.
+    npm run seed
 
     npm start
+
 ## Data Seeding script
 Generates the number of users and connections between them specified in the config file.
 
