@@ -5,7 +5,7 @@ const {
   USERS_NUMBER,
   CONNECTIONS_NUMBER,
 } = require('../config/default.json');
-const User = require('../models/User');
+const User = require('../models/user.model');
 
 const getRandomUserId = () => {
   return Math.ceil(Math.random() * USERS_NUMBER);

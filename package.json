@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "seed": "node db/seedUsers.js"
+    "seed": "node db/seed-users.js"
   },
   "author": "Kyrylo Khiman",
   "license": "ISC",
